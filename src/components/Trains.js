@@ -15,7 +15,7 @@ export default function Trains(props) {
 
   var who = props.who;
 
-  const url = "http://localhost:4000/getTrains";
+  const url = "https://bookmytrippp.herokuapp.com/getTrains";
   const [res, setRes] = useState(null);
   const [sortName, setSortName] = useState(0);
   const [sortPrice, setSortPrice] = useState(0);
@@ -54,7 +54,7 @@ export default function Trains(props) {
   useEffect(() => {
     console.log("counting docs");
     axios
-      .get("http://localhost:4000/countdocs", { withCredentials: true })
+      .get("https://bookmytrippp.herokuapp.com/countdocs", { withCredentials: true })
       .then((response) => {
         console.log(response);
         setDocsCount(response.data);
@@ -118,7 +118,7 @@ export default function Trains(props) {
   const handleRemove = (x) => {
     const id = x._id;
     axios
-      .post("http://localhost:4000/cancelTrain", { id })
+      .post("https://bookmytrippp.herokuapp.com/cancelTrain", { id })
       .then(function (response) {
         console.log("Responded");
         //window.location.reload(false);

@@ -15,7 +15,7 @@ export default function MyBookings() {
 
     const email = decoded.user.email;
 
-    const url = 'http://localhost:4000/mybookings/'+email;  
+    const url = 'https://bookmytrippp.herokuapp.com/mybookings/'+email;  
     const [res,setRes] = useState(null);
 
     useEffect( () => {
@@ -39,7 +39,7 @@ export default function MyBookings() {
     }
 
     const cancelMany = ()=>{
-        axios.post('http://localhost:4000/cancelManyBookings/',{checkedTickets})
+        axios.post('https://bookmytrippp.herokuapp.com/cancelManyBookings/',{checkedTickets})
         .then((response) =>{
             console.log(response);
             window.location.reload(false);

@@ -40,7 +40,7 @@ export default function BookTrain() {
 
     var params = useParams();
 
-    const url = 'http://localhost:4000/getTrain/'+params.trainno;  
+    const url = 'https://bookmytrippp.herokuapp.com/getTrain/'+params.trainno;  
     const [res,setRes] = useState(null);
     const [totalPrice,setTotalPrice] = useState(0);
     const [trainName,setTrainName] = useState("");
@@ -84,7 +84,7 @@ export default function BookTrain() {
 
         const email = decoded.user.email;
 
-        axios.post('http://localhost:4000/addBooking',{email:email,trainName:trainName,dot:selectedDate,passengers:users,totalPrice:totalPrice})
+        axios.post('https://bookmytrippp.herokuapp.com/addBooking',{email:email,trainName:trainName,dot:selectedDate,passengers:users,totalPrice:totalPrice})
         .then(function(response){
             console.log("Responded");
         })

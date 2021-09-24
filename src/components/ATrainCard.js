@@ -16,7 +16,7 @@ export default function ATrainCard(props) {
     const handleClick = (event)=>{
         event.preventDefault();
         
-        axios.post('http://localhost:4000/cancelTrain',{id})
+        axios.post('https://bookmytrippp.herokuapp.com/cancelTrain',{id})
         .then(function(response){
             console.log("Responded");
             //window.location.reload(false);

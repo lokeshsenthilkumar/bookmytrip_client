@@ -33,7 +33,7 @@ export default function AddTrain(props) {
             price:event.target[4].value
         }
 
-        axios.post('http://localhost:4000/addTrain',pDetails)
+        axios.post('https://bookmytrippp.herokuapp.com/addTrain',pDetails)
         .then(function(response){
             console.log("Responded");
         })

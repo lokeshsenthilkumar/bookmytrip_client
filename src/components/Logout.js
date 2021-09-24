@@ -3,7 +3,7 @@ import {useHistory} from 'react-router-dom';
 
 export default function Logout() {
     const history = useHistory();
-    axios.get('http://localhost:4000/logout',{withCredentials: true})
+    axios.get('https://bookmytrippp.herokuapp.com/logout',{withCredentials: true})
     .then(()=>{
             console.log("Logged out");
             localStorage.removeItem('jwt');

@@ -17,7 +17,7 @@ export default function BookingCard(props) {
 
     const handleClick = (event)=>{
 
-        axios.post('http://localhost:4000/cancelBooking',{bookingId})
+        axios.post('https://bookmytrippp.herokuapp.com/cancelBooking',{bookingId})
         .then(function(response){
             console.log("Responded");
             window.location.reload(false);

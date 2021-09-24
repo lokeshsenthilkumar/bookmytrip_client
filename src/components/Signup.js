@@ -96,7 +96,7 @@ export default function Signup() {
             admin:false
         }
 
-        axios.post('http://localhost:4000/signup',pCredits,{withCredentials: true})
+        axios.post('https://bookmytrippp.herokuapp.com/signup',pCredits,{withCredentials: true})
             .then(function(response){
                 console.log("Responded");
                 console.log(response);
