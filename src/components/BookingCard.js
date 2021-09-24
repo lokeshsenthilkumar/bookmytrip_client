@@ -39,7 +39,7 @@ export default function BookingCard(props) {
                 </div>
                 <div className="card-body">
                     <h5>Train Name: {trainName}</h5>
-                    <h5>Date of travel : {dot}</h5>
+                    <h5>Date of Travel : {dot}</h5>
                     <h5 style={{marginBottom:"0"}}>Passengers :</h5>
                     {   
                         passengers.map((passenger)=>(
@@ -48,7 +48,7 @@ export default function BookingCard(props) {
                     }
                     <br/>
                     <h5>Total Price : {totalPrice}₹</h5>
-                    <button className="btn btn-danger" onClick={handleClick} style={{marginBottom:"50px"}}>Cancel Booking</button>
+                    <button className="btn btn-danger" onClick={handleClick} style={{marginBottom:"50px"}}>Cancel Booking(s)</button>
                 </div>
             </div>
         </div>
