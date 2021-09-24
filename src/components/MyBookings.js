@@ -75,17 +75,21 @@ export default function MyBookings() {
         <Link className="navbar-brand" to="/logout" style={{ fontSize: 20, color: "#B1BD5D" }}> &nbsp;Logout</Link>
         </span>
         </nav>
-        <div style={styles.card}>
-            {
-            res && res.data.map((booking)=>(
-                <BookingCard booking={booking} handleCheck={handleCheck}/>
-            ))
-            }
-        </div>
-        <div style={{textAlign:'center',margin:50}}>
-            <button className="btn btn-danger" onClick={cancelMany}>Cancel</button>
-        </div>
-        
+
+        <div className="body">
+
+            <div style={styles.card} >
+                {
+                res && res.data.map((booking)=>(
+                    <BookingCard booking={booking} handleCheck={handleCheck}/>
+                ))
+                }
+            </div>
+            <div style={{textAlign:'center',margin:50}}>
+                <button className="btn btn-danger" onClick={cancelMany}>Cancel</button>
+            </div>
+
+        </div>        
         </>
     )
 }
