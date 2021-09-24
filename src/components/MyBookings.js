@@ -49,7 +49,7 @@ export default function MyBookings() {
 
     return (
         <>
-        <nav id="userNavbar" className="navbar navbar-light bg-light" style={{marginLeft:"20px"}}>
+        <nav id="userNavbar" className="navbar navbar-light bg-light" style={{paddingLeft:"20px"}}>
         <Link id="furnitureHomeButton" className="navbar-brand" to="/">
         <span style={{ fontSize: 20, color: "grey" }}>
             <i className="fas fa-train"></i>{" "}
