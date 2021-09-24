@@ -86,7 +86,7 @@ export default function MyBookings() {
                 }
             </div>
             <div style={{textAlign:'center',margin:50}}>
-                <button className="btn btn-danger" onClick={cancelMany}>Cancel</button>
+                <button className="btn btn-danger" onClick={cancelMany} style={{marginBottom:"100px"}}>Cancel</button>
             </div>
 
         </div>        

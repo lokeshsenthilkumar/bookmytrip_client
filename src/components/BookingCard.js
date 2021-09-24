@@ -48,7 +48,7 @@ export default function BookingCard(props) {
                     }
                     <br/>
                     <h5>Total Price : {totalPrice}₹</h5>
-                    <button className="btn btn-danger" onClick={handleClick} style={{marginBottom:"50px"}}>Cancel Booking(s)</button>
+                    <button className="btn btn-danger" onClick={handleClick}>Cancel Booking</button>
                 </div>
             </div>
         </div>
