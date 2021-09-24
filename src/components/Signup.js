@@ -100,6 +100,7 @@ export default function Signup() {
             .then(function(response){
                 console.log("Responded");
                 console.log(response);
+                localStorage.setItem('jwt', response.data.token);
                 history.push('/user');
             })
             .catch(function(err){

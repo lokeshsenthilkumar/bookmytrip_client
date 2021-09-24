@@ -48,26 +48,31 @@ export default function MyBookings() {
     }
 
     return (
-        <>
+        <div>
         <nav id="userNavbar" className="navbar navbar-light bg-light" style={{paddingLeft:"20px"}}>
         <Link id="furnitureHomeButton" className="navbar-brand" to="/">
         <span style={{ fontSize: 20, color: "grey" }}>
             <i className="fas fa-train"></i>{" "}
             <span className="navbar-brand mb-0 h1" style={{ color: "#B1BD5D" }}>
-            book my trip
+            bookmytrip
             </span>
         </span>
         </Link>
 
         <span>
-        
-        
-        <Link id="furnitureOrderButton" className="navbar-brand" to="/user/mybookings">
+
+        <Link
+            className="navbar-brand"
+            to="/user"
+        >
             <span style={{ fontSize: 20, color: "grey" }}>
-            <i className="fas fa-ticket-alt"></i>
+            <i class="fas fa-subway"></i>
             </span>{" "}
-            <p style={{ display: "inline", color: "#B1BD5D" }}>My Bookings</p>
+            <p style={{ display: "inline", color: "#B1BD5D" }}>Trains</p>
         </Link>
+        
+        
+        
 
         <span style={{ fontSize: 20, color: "grey" }}>
             <i className="fas fa-sign-out-alt"></i>
@@ -76,7 +81,7 @@ export default function MyBookings() {
         </span>
         </nav>
 
-        <div className="body">
+        <div className="body"  style={{paddingBottom:"20px"}}>
 
             <div style={styles.card} >
                 {
@@ -86,10 +91,10 @@ export default function MyBookings() {
                 }
             </div>
             <div style={{textAlign:'center',margin:50}}>
-                <button className="btn btn-danger" onClick={cancelMany} style={{marginBottom:"100px"}}>Cancel</button>
+                <button className="btn btn-danger" onClick={cancelMany}>Cancel</button>
             </div>
 
         </div>        
-        </>
+        </div>
     )
 }

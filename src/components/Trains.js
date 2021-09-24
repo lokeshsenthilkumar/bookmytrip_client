@@ -191,7 +191,7 @@ export default function Trains(props) {
           <span style={{ fontSize: 20, color: "grey" }}>
             <i class="fas fa-train"></i>{" "}
             <span className="navbar-brand mb-0 h1" style={{ color: "#B1BD5D" }}>
-              book my trip
+              bookmytrip
             </span>
           </span>
         </Link>
@@ -209,15 +209,7 @@ export default function Trains(props) {
             </Link>
           ) : (
             <>
-            <Link
-              className="navbar-brand"
-              to="/user"
-            >
-              <span style={{ fontSize: 20, color: "grey" }}>
-                <i class="fas fa-subway"></i>
-              </span>{" "}
-              <p style={{ display: "inline", color: "#B1BD5D" }}>Trains</p>
-            </Link>
+
 
             <Link
               className="navbar-brand"
@@ -363,7 +355,7 @@ export default function Trains(props) {
           <tbody>{displayTrains}</tbody>
         </Table>
 
-        <div style={{display:"flex",justifyContent:"space-between",width:"1010px"}}>
+        <div style={{display:"flex",justifyContent:"space-between",width:"1010px",paddingBottom:"30px"}}>
           <select
             className="form-select"
             name="limit"
